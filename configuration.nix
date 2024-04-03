@@ -5,6 +5,8 @@
 { config, pkgs, ... }:
 
 {
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
 #  virtualisation.hypervGuest = {
 #    enable = true;
 #    videoMode = "1920x1080";
